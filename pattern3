@@ -1,0 +1,18 @@
+def print_double_sided_staircase(height):
+	for i in range(1, height + 1):
+		# Print left-side steps
+		for j in range(i):
+			print("*", end="")
+		
+		# Add spacing between the two sides
+		print(" " * (2 * height - 2 * i), end="")
+		
+		# Print right-side steps
+		for j in range(i):
+			print("*", end="")
+		
+		print() # Move to the next line
+
+# Get user input for the height of the staircase
+height = int(input("Enter the height: "))
+print_double_sided_staircase(height)
