@@ -29,15 +29,15 @@ int main()
 {
     int n;
     cin >> n;
-    int i = 1;
-    while (i <= n)
+    int i = 0;
+    while (i < n)
     {
-        int j = 1;
-        char value = 'A';
-        while (j <= n)
+        int j = 0;
+        char ch = 'A' + i;
+        while (j < n)
         {
-            cout << value;
-            value += 1;
+            cout << ch;
+            ch += 1;
             j += 1;
         }
         cout << endl;
